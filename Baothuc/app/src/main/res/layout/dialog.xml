@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#054867"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Làm phép tính:"
+        android:textSize="20sp"
+        android:textColor="#fff">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvpheptinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"></TextView>
+
+    <EditText
+        android:id="@+id/edtdapan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập đáp án"></EditText>
+
+    <Button
+        android:id="@+id/btntraloi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#040303"
+        android:textColor="#fff"
+        android:text="Trả lời" />
+
+
+</LinearLayout>

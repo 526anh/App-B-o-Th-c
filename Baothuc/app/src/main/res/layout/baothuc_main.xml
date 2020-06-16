@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#054867">
+
+    <TimePicker
+        android:id="@+id/tpbaothuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="screen"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1" />
+
+    <Button
+        android:id="@+id/btnhengio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:background="#040303"
+        android:text="Hẹn giờ"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tpbaothuc" />
+
+    <Button
+        android:id="@+id/btntat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#040303"
+        android:text="Tắt"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btntamdung"
+        app:layout_constraintTop_toBottomOf="@+id/tpbaothuc" />
+
+    <TextView
+        android:id="@+id/tvhienthi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnhengio" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Đặt báo thức"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toEndOf="@+id/btnthoatnhacchuong"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnthoatnhacchuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <Button
+        android:id="@+id/btntamdung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:background="#040303"
+        android:text="TẠM DỪNG"
+        android:textColor="#fff"
+        app:layout_constraintStart_toEndOf="@+id/btnhengio"
+        app:layout_constraintTop_toBottomOf="@+id/tpbaothuc" />
+
+    <ImageButton
+        android:id="@+id/btnnhac"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
